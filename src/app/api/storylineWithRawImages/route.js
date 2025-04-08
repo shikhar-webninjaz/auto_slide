@@ -20,6 +20,8 @@ export async function POST(request) {
             );
         }
 
+        // Api Checking
+
         const query = `
             SELECT * FROM public.user WHERE id = $1;
         `;
